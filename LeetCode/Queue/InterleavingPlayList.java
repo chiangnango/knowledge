@@ -1,3 +1,10 @@
+/* 
+ Filter out empty playlist in constructor and then store list of PlayList to Queue to do interleaving.
+ hasNextTrack() only check if queue is empty and if first playList contains any track.
+ getNextTrack() return null if there's no next track or return track from the first playList in queue.
+ And if there's track in the popped playList,  push it to the end of queue to do interLeaving.
+*/
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
